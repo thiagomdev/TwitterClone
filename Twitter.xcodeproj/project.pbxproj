@@ -21,6 +21,7 @@
 		C8A29ED027A6D5F90034A94B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ECF27A6D5F90034A94B /* Extensions.swift */; };
 		C8A29ED227A6DF2D0034A94B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */; };
 		C8A29ED427A6DF550034A94B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED327A6DF550034A94B /* RegisterView.swift */; };
+		C8A29ED627A6F2520034A94B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED527A6F2520034A94B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C8A29ECF27A6D5F90034A94B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C8A29ED327A6DF550034A94B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C8A29ED527A6F2520034A94B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				C8A29EAE27A609FB0034A94B /* CodeView.swift */,
 				C8A29ECF27A6D5F90034A94B /* Extensions.swift */,
+				C8A29ED527A6F2520034A94B /* Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				C8A29ED227A6DF2D0034A94B /* RegisterViewController.swift in Sources */,
 				C825C7F727A6007A00825B2F /* LoginViewController.swift in Sources */,
 				C8A29EB227A60D4F0034A94B /* MainTabBarController.swift in Sources */,
+				C8A29ED627A6F2520034A94B /* Utilities.swift in Sources */,
 				C825C7F327A6007A00825B2F /* AppDelegate.swift in Sources */,
 				C8A29EC827A60F6A0034A94B /* FeedViewController.swift in Sources */,
 				C8A29ED027A6D5F90034A94B /* Extensions.swift in Sources */,
