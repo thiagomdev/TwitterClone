@@ -1,5 +1,5 @@
 //
-//  ExploreViewController.swift
+//  ConversationsViewController.swift
 //  Twitter
 //
 //  Created by Thiago Monteiro on 29/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController {
+class ConversationsViewController: UIViewController {
 
     // MARK: - Properties
     
@@ -21,10 +21,9 @@ class ExploreViewController: UIViewController {
     
     // MARK: - Selectors
     
-    
     // MARK: - Methods
     private func configureUI() {
         self.view.backgroundColor = .white
-        self.navigationItem.title = "Explore"
+        self.navigationItem.title = "Messages"
     }
 }

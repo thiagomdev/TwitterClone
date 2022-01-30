@@ -9,8 +9,21 @@ import UIKit
 
 class NotificationsViewController: UIViewController {
 
+    // MARK: - Properties
+    
+    // MARK: - Components
+    
+    // MARK: - Lifecicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        self.configureUI()
+    }
+    
+    // MARK: - Selectors
+    
+    // MARK: - Methods
+    private func configureUI() {
+        self.view.backgroundColor = .white
+        self.navigationItem.title = "Notifications"
     }
 }
