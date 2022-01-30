@@ -1,31 +1,30 @@
 //
-//  ViewController.swift
+//  RegisterViewController.swift
 //  Twitter
 //
-//  Created by Thiago Monteiro on 29/01/22.
+//  Created by Thiago Monteiro on 30/01/22.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     // MARK: - Properties
-    private let loginView: LoginView
+    private let registerView: RegisterView
     
     // MARK: - Components
     
     // MARK: - Lifecicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureUI()
     }
     
     override func loadView() {
-        self.view = loginView
+        self.view = registerView
     }
     
     init() {
-        self.loginView = LoginView()
+        self.registerView = RegisterView()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -36,9 +35,4 @@ class LoginViewController: UIViewController {
     // MARK: - Selectors
     
     // MARK: - Methods
-    private func configureUI() {
-        self.navigationController?.navigationBar.barStyle = .black
-        self.navigationController?.navigationBar.isHidden = true
-    }
 }
-

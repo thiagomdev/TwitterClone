@@ -19,6 +19,8 @@
 		C8A29ECC27A60F9C0034A94B /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ECB27A60F9C0034A94B /* NotificationsViewController.swift */; };
 		C8A29ECE27A60FB90034A94B /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ECD27A60FB90034A94B /* ConversationsViewController.swift */; };
 		C8A29ED027A6D5F90034A94B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ECF27A6D5F90034A94B /* Extensions.swift */; };
+		C8A29ED227A6DF2D0034A94B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */; };
+		C8A29ED427A6DF550034A94B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED327A6DF550034A94B /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C8A29ECB27A60F9C0034A94B /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		C8A29ECD27A60FB90034A94B /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		C8A29ECF27A6D5F90034A94B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C8A29ED327A6DF550034A94B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 		C8A29EA727A608B80034A94B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 		C8A29EA927A608BF0034A94B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C8A29ED327A6DF550034A94B /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A29EAD27A609880034A94B /* LoginView.swift in Sources */,
+				C8A29ED227A6DF2D0034A94B /* RegisterViewController.swift in Sources */,
 				C825C7F727A6007A00825B2F /* LoginViewController.swift in Sources */,
 				C8A29EB227A60D4F0034A94B /* MainTabBarController.swift in Sources */,
 				C825C7F327A6007A00825B2F /* AppDelegate.swift in Sources */,
@@ -443,6 +450,7 @@
 				C8A29ED027A6D5F90034A94B /* Extensions.swift in Sources */,
 				C8A29ECA27A60F830034A94B /* ExploreViewController.swift in Sources */,
 				C8A29ECE27A60FB90034A94B /* ConversationsViewController.swift in Sources */,
+				C8A29ED427A6DF550034A94B /* RegisterView.swift in Sources */,
 				C8A29EAF27A609FB0034A94B /* CodeView.swift in Sources */,
 				C8A29ECC27A60F9C0034A94B /* NotificationsViewController.swift in Sources */,
 			);
