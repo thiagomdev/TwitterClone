@@ -8,25 +8,42 @@
 import UIKit
 
 class Utilities {
-    func activeContainerViewBasedOn(with imageView: UIImage?, textField: UITextField) -> UIView {
+    func turnOnContainerView(with imageView: UIImage?, textField: UITextField) -> UIView {
         let view = UIView()
         let image = UIImageView()
         view.heightAnchor.constraint(equalToConstant: 50).isActive = true
         image.image = imageView
         view.addSubview(image)
-        image.activeAnchorBasedOn(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
-        image.setDimensionsBasedOn(width: 24, height: 24)
+        
+        image.turnOnPinTo(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
+        image.turnOnDimenssion(toWidth: 24, toHeight: 24)
         view.addSubview(textField)
-        textField.activeAnchorBasedOn(left: image.rightAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, paddingBottom: 8)
+        textField.turnOnPinTo(left: image.rightAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, paddingBottom: 8)
+        
+        let divider = UIView()
+        divider.backgroundColor = .white
+        divider.alpha = 0.6
+        view.addSubview(divider)
+        divider.turnOnPinTo(left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, height: 0.75)
         return view
     }
     
-    func activeTextField(with placeholder: String, font: UIFont?) -> UITextField {
+    func turnOnTextField(with placeholder: String, font: UIFont?) -> UITextField {
         let textField = UITextField()
         textField.placeholder = placeholder
         textField.textColor = .white
         textField.font = font
         textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         return textField
+    }
+    
+    func turnOnButton(textOne: String, textTwo: String) -> UIButton {
+        let button = UIButton(type: .system)
+        let attibutedTitle = NSMutableAttributedString(string: textOne, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white])
+        
+        attibutedTitle.append(NSAttributedString(string: textTwo, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white]))
+        
+        button.setAttributedTitle(attibutedTitle, for: .normal)
+        return button
     }
 }

@@ -39,7 +39,7 @@ class MainTabBarController: UITabBarController {
     // MARK: - Methods
     private func configureUI() {
         self.view.addSubview(actionButton)
-        self.actionButton.activeAnchorBasedOn(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
+        self.actionButton.turnOnPinTo(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
         self.actionButton.layer.cornerRadius = 56 / 2
     }
     

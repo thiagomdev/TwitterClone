@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIView {
-    func activeAnchorBasedOn(top: NSLayoutYAxisAnchor? = nil,
+    func turnOnPinTo(top: NSLayoutYAxisAnchor? = nil,
                 left: NSLayoutXAxisAnchor? = nil,
                 bottom: NSLayoutYAxisAnchor? = nil,
                 right: NSLayoutXAxisAnchor? = nil,
@@ -47,13 +47,13 @@ extension UIView {
         }
     }
     
-    func activeCenterBasedOn(inView view: UIView, yConstant: CGFloat? = 0) {
+    func turnOnCenter(toView view: UIView, yConstant: CGFloat? = 0) {
         translatesAutoresizingMaskIntoConstraints = false
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: yConstant!).isActive = true
     }
     
-    func activeCenterXBasedOn(inView view: UIView, topAnchor: NSLayoutYAxisAnchor? = nil, paddingTop: CGFloat? = 0) {
+    func turnOnCenterX(toView view: UIView, topAnchor: NSLayoutYAxisAnchor? = nil, paddingTop: CGFloat? = 0) {
         translatesAutoresizingMaskIntoConstraints = false
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
@@ -62,7 +62,7 @@ extension UIView {
         }
     }
     
-    func activeCenterYBasedOn(inView view: UIView, leftAnchor: NSLayoutXAxisAnchor? = nil, paddingLeft: CGFloat? = nil, constant: CGFloat? = 0) {
+    func turnOnCenterY(toView view: UIView, leftAnchor: NSLayoutXAxisAnchor? = nil, paddingLeft: CGFloat? = nil, constant: CGFloat? = 0) {
         translatesAutoresizingMaskIntoConstraints = false
         
         centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant!).isActive = true
@@ -72,15 +72,15 @@ extension UIView {
         }
     }
     
-    func setDimensionsBasedOn(width: CGFloat, height: CGFloat) {
+    func turnOnDimenssion(toWidth: CGFloat, toHeight: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalToConstant: width).isActive = true
-        heightAnchor.constraint(equalToConstant: height).isActive = true
+        widthAnchor.constraint(equalToConstant: toWidth).isActive = true
+        heightAnchor.constraint(equalToConstant: toHeight).isActive = true
     }
     
     func addConstraintsToFillViewBasedOn(_ view: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
-        activeAnchorBasedOn(top: view.topAnchor, left: view.leftAnchor,
+        turnOnPinTo(top: view.topAnchor, left: view.leftAnchor,
                bottom: view.bottomAnchor, right: view.rightAnchor)
     }
 }
