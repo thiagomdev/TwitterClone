@@ -6,12 +6,17 @@
 //
 
 import UIKit
+
 protocol RegisterViewDelegate: AnyObject {
     func backToLogIn()
+    func showImagePicker()
 }
+
 class RegisterView: UIView {
     // MARK: - Properties
     weak var delegate: RegisterViewDelegate?
+    public let imagePicker = UIImagePickerController()
+    
     // MARK: - Components
     let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
@@ -118,7 +123,7 @@ class RegisterView: UIView {
     }
     
     @objc func addPhotoButton(_ sender: UIButton) {
-        print("add some photo")
+        self.delegate?.showImagePicker()
     }
     
     @objc func turnOnRegisterButton(_ sender: UIButton) {
@@ -131,8 +136,10 @@ class RegisterView: UIView {
     // MARK: - Extensions
 extension RegisterView: CodeView {
     func buildViewHierarchy() {
+        self.imagePicker.allowsEditing = true
         self.addSubview(plusPhotoButton)
         self.addSubview(stack)
+        
         self.stack.addArrangedSubview(emailContainerView)
         self.stack.addArrangedSubview(passwordContainerView)
         self.stack.addArrangedSubview(fullnameContainerView)
@@ -144,7 +151,7 @@ extension RegisterView: CodeView {
     
     func setupConstraints() {
         self.plusPhotoButton.turnOnCenterX(toView: self, topAnchor: self.safeAreaLayoutGuide.topAnchor)
-        self.plusPhotoButton.turnOnDimenssion(toWidth: 150, toHeight: 150)
+        self.plusPhotoButton.turnOnDimenssion(toWidth: 128, toHeight: 128)
         
         self.stack.turnOnPinTo(top: self.plusPhotoButton.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingTop: 32,paddingLeft: 38, paddingRight: 38)
         
@@ -152,6 +159,5 @@ extension RegisterView: CodeView {
     }
     
     func extraSetupConfiguration() {
-        
     }
 }
