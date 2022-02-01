@@ -9,8 +9,22 @@ import UIKit
 
 class ExploreViewController: UIViewController {
 
+    // MARK: - Properties
+    
+    // MARK: - Components
+    
+    // MARK: - Lifecicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .green
+        self.configureUI()
+    }
+    
+    // MARK: - Selectors
+    
+    
+    // MARK: - Methods
+    private func configureUI() {
+        self.view.backgroundColor = .white
+        self.navigationItem.title = "Explore"
     }
 }
