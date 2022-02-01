@@ -6,9 +6,12 @@
 //
 
 import UIKit
-
+protocol LoginViewDelegate: AnyObject {
+    func gotToSignUPView()
+}
 class LoginView: UIView {
     // MARK: - Properties
+    weak var delegate: LoginViewDelegate?
     
     // MARK: - Components
     let logoImageView: UIImageView = {
@@ -32,7 +35,7 @@ class LoginView: UIView {
         view.backgroundColor = .twitterBlue
         return view
     }()
-    
+        
     private let stack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
@@ -88,11 +91,11 @@ class LoginView: UIView {
     
     // MARK: - Selectors
     @objc func turnOnLoginButton(_ sender: UIButton) {
-        print("login buttn tapped")
+        
     }
     
     @objc func goToSignUp(_ sender: UIButton) {
-        print("Sign Up button tapped")
+        self.delegate?.gotToSignUPView()
     }
     
     // MARK: - Methods

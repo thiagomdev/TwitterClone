@@ -26,6 +26,7 @@ class RegisterViewController: UIViewController {
     init() {
         self.registerView = RegisterView()
         super.init(nibName: nil, bundle: nil)
+        self.registerView.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -35,4 +36,10 @@ class RegisterViewController: UIViewController {
     // MARK: - Selectors
     
     // MARK: - Methods
+}
+
+extension RegisterViewController: RegisterViewDelegate {
+    func backToLogIn() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
