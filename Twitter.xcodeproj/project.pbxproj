@@ -11,6 +11,8 @@
 		C825C7F727A6007A00825B2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825C7F627A6007A00825B2F /* LoginViewController.swift */; };
 		C825C7FC27A6007B00825B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C825C7FB27A6007B00825B2F /* Assets.xcassets */; };
 		C825C7FF27A6007B00825B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C825C7FD27A6007B00825B2F /* LaunchScreen.storyboard */; };
+		C88D128B27B0B3E2002FAEB4 /* ImageProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D128A27B0B3E2002FAEB4 /* ImageProject.swift */; };
+		C88D128D27B0B404002FAEB4 /* TextLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D128C27B0B404002FAEB4 /* TextLabels.swift */; };
 		C8A29EAD27A609880034A94B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29EAC27A609880034A94B /* LoginView.swift */; };
 		C8A29EAF27A609FB0034A94B /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29EAE27A609FB0034A94B /* CodeView.swift */; };
 		C8A29EB227A60D4F0034A94B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29EB127A60D4F0034A94B /* MainTabBarController.swift */; };
@@ -21,7 +23,7 @@
 		C8A29ED027A6D5F90034A94B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ECF27A6D5F90034A94B /* Extensions.swift */; };
 		C8A29ED227A6DF2D0034A94B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */; };
 		C8A29ED427A6DF550034A94B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED327A6DF550034A94B /* RegisterView.swift */; };
-		C8A29ED627A6F2520034A94B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED527A6F2520034A94B /* Utilities.swift */; };
+		C8A29ED627A6F2520034A94B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A29ED527A6F2520034A94B /* Utils.swift */; };
 		C8E7CCFC27A961CB00F515B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E7CCFB27A961CB00F515B8 /* GoogleService-Info.plist */; };
 		D1B51DB638F4390958344E02 /* Pods_Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC225DC5DC1B8D8F3D988A4 /* Pods_Twitter.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,8 @@
 		C825C7F627A6007A00825B2F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C825C7FB27A6007B00825B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C825C7FE27A6007B00825B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C88D128A27B0B3E2002FAEB4 /* ImageProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProject.swift; sourceTree = "<group>"; };
+		C88D128C27B0B404002FAEB4 /* TextLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabels.swift; sourceTree = "<group>"; };
 		C8A29EAC27A609880034A94B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C8A29EAE27A609FB0034A94B /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		C8A29EB127A60D4F0034A94B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -45,7 +49,7 @@
 		C8A29ECF27A6D5F90034A94B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C8A29ED127A6DF2D0034A94B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C8A29ED327A6DF550034A94B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		C8A29ED527A6F2520034A94B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C8A29ED527A6F2520034A94B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C8E7CCF527A9606200F515B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8E7CCFB27A961CB00F515B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,13 +105,39 @@
 			isa = PBXGroup;
 			children = (
 				C8A29EA027A608500034A94B /* Supporting Files */,
-				C8A29E9F27A6084D0034A94B /* Utilities */,
+				C88D128727B0B38F002FAEB4 /* HelpersProject */,
+				C8A29E9F27A6084D0034A94B /* Utils */,
 				C8A29E9E27A608490034A94B /* Features */,
 				C8A29EAB27A608EF0034A94B /* LaunchScreen */,
 				C8E7CCF527A9606200F515B8 /* Info.plist */,
 				C8E7CCFB27A961CB00F515B8 /* GoogleService-Info.plist */,
 			);
 			path = Twitter;
+			sourceTree = "<group>";
+		};
+		C88D128727B0B38F002FAEB4 /* HelpersProject */ = {
+			isa = PBXGroup;
+			children = (
+				C88D128927B0B39E002FAEB4 /* ImagesProject */,
+				C88D128827B0B39B002FAEB4 /* LabelsProject */,
+			);
+			path = HelpersProject;
+			sourceTree = "<group>";
+		};
+		C88D128827B0B39B002FAEB4 /* LabelsProject */ = {
+			isa = PBXGroup;
+			children = (
+				C88D128C27B0B404002FAEB4 /* TextLabels.swift */,
+			);
+			path = LabelsProject;
+			sourceTree = "<group>";
+		};
+		C88D128927B0B39E002FAEB4 /* ImagesProject */ = {
+			isa = PBXGroup;
+			children = (
+				C88D128A27B0B3E2002FAEB4 /* ImageProject.swift */,
+			);
+			path = ImagesProject;
 			sourceTree = "<group>";
 		};
 		C8A29E9E27A608490034A94B /* Features */ = {
@@ -124,14 +154,14 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		C8A29E9F27A6084D0034A94B /* Utilities */ = {
+		C8A29E9F27A6084D0034A94B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				C8A29EAE27A609FB0034A94B /* CodeView.swift */,
 				C8A29ECF27A6D5F90034A94B /* Extensions.swift */,
-				C8A29ED527A6F2520034A94B /* Utilities.swift */,
+				C8A29ED527A6F2520034A94B /* Utils.swift */,
 			);
-			path = Utilities;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		C8A29EA027A608500034A94B /* Supporting Files */ = {
@@ -517,12 +547,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A29EAD27A609880034A94B /* LoginView.swift in Sources */,
+				C88D128B27B0B3E2002FAEB4 /* ImageProject.swift in Sources */,
 				C8A29ED227A6DF2D0034A94B /* RegisterViewController.swift in Sources */,
 				C825C7F727A6007A00825B2F /* LoginViewController.swift in Sources */,
 				C8A29EB227A60D4F0034A94B /* MainTabBarController.swift in Sources */,
-				C8A29ED627A6F2520034A94B /* Utilities.swift in Sources */,
+				C8A29ED627A6F2520034A94B /* Utils.swift in Sources */,
 				C825C7F327A6007A00825B2F /* AppDelegate.swift in Sources */,
 				C8A29EC827A60F6A0034A94B /* FeedViewController.swift in Sources */,
+				C88D128D27B0B404002FAEB4 /* TextLabels.swift in Sources */,
 				C8A29ED027A6D5F90034A94B /* Extensions.swift in Sources */,
 				C8A29ECA27A60F830034A94B /* ExploreViewController.swift in Sources */,
 				C8A29ECE27A60FB90034A94B /* ConversationsViewController.swift in Sources */,
@@ -670,7 +702,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C268D3L4YC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Twitter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Twitter;
@@ -700,7 +732,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C268D3L4YC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Twitter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Twitter;

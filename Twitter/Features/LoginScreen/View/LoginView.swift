@@ -18,20 +18,22 @@ class LoginView: UIView {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
-        image.image = UIImage(named: "TwitterLogo")
+        image.image = AllImage().logoImage
         return image
     }()
     
     lazy var emailContainerView: UIView = {
-        let email = UIImage(named: "ic_mail_outline_white_2x-1")
-        let view = Utilities().turnOnContainerView(with: email, textField: emailTextField)
+        let email = AllImage().emailImage
+        let view = Utils().makeView(with: email,
+        textField: emailTextField)
         view.backgroundColor = .twitterBlue
         return view
     }()
     
     lazy var passwordContainerView: UIView = {
-        let password = UIImage(named: "ic_lock_outline_white_2x")
-        let view = Utilities().turnOnContainerView(with: password, textField: passwordTextField)
+        let password = AllImage().passwordImage
+        let view = Utils().makeView(with: password,
+        textField: passwordTextField)
         view.backgroundColor = .twitterBlue
         return view
     }()
@@ -45,19 +47,21 @@ class LoginView: UIView {
     }()
     
     private let emailTextField: UITextField = {
-        let email = Utilities().turnOnTextField(with: "Email", font: .systemFont(ofSize: 16))
+        let email = Utils().makeTextField(with: AllText().emailPlaceholderText,
+        font: .systemFont(ofSize: 16))
         return email
     }()
     
     private let passwordTextField: UITextField = {
-        let password = Utilities().turnOnTextField(with: "Password", font: .systemFont(ofSize: 16))
+        let password = Utils().makeTextField(with: AllText().passwordPlaceholderText,
+        font: .systemFont(ofSize: 16))
         password.isSecureTextEntry = true
         return password
     }()
     
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Log In", for: .normal)
+        button.setTitle(AllText().logInText, for: .normal)
         button.setTitleColor(.twitterBlue, for: .normal)
         button.backgroundColor = .white
         button.layer.cornerRadius = 8
@@ -68,7 +72,7 @@ class LoginView: UIView {
     }()
     
     private let noAccount: UIButton = {
-        let button = Utilities().turnOnButton(textOne: "Don't have an account? ", textTwo: " Sign Up")
+        let button = Utils().makeButton(textOne: AllText().dontHaveAccountText, textTwo: AllText().signUpText)
         button.addTarget(self, action: #selector(goToSignUp(_:)), for: .touchUpInside)
         return button
     }()
@@ -91,15 +95,12 @@ class LoginView: UIView {
     
     // MARK: - Selectors
     @objc func turnOnLoginButton(_ sender: UIButton) {
-        
+        print("login button tapped")
     }
     
     @objc func goToSignUp(_ sender: UIButton) {
         self.delegate?.gotToSignUPView()
     }
-    
-    // MARK: - Methods
-    
 }
 
     // MARK: - Extensions
@@ -117,11 +118,9 @@ extension LoginView: CodeView {
         self.logoImageView.turnOnCenterX(toView: self, topAnchor: self.safeAreaLayoutGuide.topAnchor)
         self.logoImageView.turnOnDimenssion(toWidth: 150, toHeight: 150)
         
-        self.stack.turnOnPinTo(top: self.logoImageView.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, paddingLeft: 38, paddingRight: 38)
-        self.noAccount.turnOnPinTo(left: self.leftAnchor, bottom: self.safeAreaLayoutGuide.bottomAnchor, right: self.rightAnchor, paddingLeft: 40, paddingRight: 40)
+        self.stack.turnOnPinTo(top: logoImageView.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingLeft: 38, paddingRight: 38)
+        self.noAccount.turnOnPinTo(left: leftAnchor, bottom: safeAreaLayoutGuide.bottomAnchor, right: rightAnchor, paddingLeft: 40, paddingRight: 40)
     }
     
-    func extraSetupConfiguration() {
-        
-    }
+    func extraSetupConfiguration() { }
 }

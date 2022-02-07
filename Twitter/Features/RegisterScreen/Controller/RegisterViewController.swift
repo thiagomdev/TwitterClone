@@ -50,7 +50,7 @@ extension RegisterViewController: RegisterViewDelegate {
 extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let profileImage = info[.editedImage] as? UIImage else { return }
-        self.registerView.plusPhotoButton.layer.cornerRadius = 128 / 2
+        self.registerView.plusPhotoButton.layer.cornerRadius = 150 / 2
         self.registerView.plusPhotoButton.layer.masksToBounds = true
         self.registerView.plusPhotoButton.imageView?.clipsToBounds = true
         self.registerView.plusPhotoButton.layer.borderColor = UIColor.white.cgColor
